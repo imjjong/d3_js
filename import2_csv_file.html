@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>D3-Tutorial</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+
+    </head>
+
+    <body>
+
+
+        <div>JJong_FailAttachment</div>
+        <p>D3.JS import</p> 
+    
+        <script>
+            d3.selectAll("div").style("color", "blue");
+
+            // change black in Back groundcolor 
+            d3.select("body").style("background-color", "black");
+
+            d3.selectAll("p").style("color", function() {
+  return "hsl(" + Math.random() * 360 + ",100%,50%)";
+});
+console.log("hi");
+            var dataSet = [];
+            
+
+d3.csv("alphabet.csv").then(function(data) {
+  console.log(data);
+  
+});
+
+
+
+        </script>
+    </body>
+</html>

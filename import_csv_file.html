@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+        <title>D3-Tutorial</title>
+        <script src="https://d3js.org/d3.v5.js"></script>
+      </head>
+
+    <body>
+        <div>JJong2</div>
+        <script>
+        console.log("hello")
+        var dataSet = [];
+        d3.csv("temperature.csv", function(data){
+            // Number to String
+                data.temperature = +data.temperature;
+                dataSet.push(data)
+            }    
+        ).then(function(data){
+            // console.log(dataSet)
+            // console.log(dataSet[1].temperature)
+            console.log(dataSet[1])
+            return dataSet
+            
+
+            // console.log(d3.min(dataSet))
+        });
+
+        
+
+        
+                       
+        </script>
+    </body>
+</html>
